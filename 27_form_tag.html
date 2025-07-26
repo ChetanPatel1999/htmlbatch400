@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Registration form</title>
+</head>
+
+<body>
+    <h3>Registration form :</h3>
+    <!-- method attribute value :- 
+     get:- its show data in url so its not secure method.
+            its take 2 - 5 mb data from clint side to serverside
+            its fast method then post method.
+     post:-its not show data in url so its secure method.
+           its take unlimited data from clint side to server side
+        its slow method compare to get method.
+
+    -->
+    <form action="03_registration.html" method="get">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="uname"></td>
+            </tr>
+            <tr>
+                <th>Fname</th>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="register"> <input type="reset" value="clear"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
