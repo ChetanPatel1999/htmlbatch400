@@ -29,11 +29,63 @@
                 <th>Password</th>
                 <td><input type="password" name="pass"></td>
             </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>
+                    male <input type="radio" name="gender" value="male">
+                    female <input type="radio" name="gender" value="female">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Hobbies
+                </th>
+
+                <td>
+                    cricket <input type="checkbox" name="hobbies" value="cricket">
+                    gaming <input type="checkbox" name="hobbies" value="gaming">
+                    dancing <input type="checkbox" name="hobbies" value="dancing">
+                </td>
+
+            </tr>
+            <tr>
+                <th>Select State</th>
+                <td>
+                    <select name="state">
+                        <option>---</option>
+                        <option value="madhya-pradesh">MP</option>
+                        <option>UP</option>
+                        <option selected>RJ</option>
+                        <option>MH</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Select Skill</th>
+                <td>
+                    <select name="skill" multiple size="3">
+                        <option >C/C++</option>
+                        <option>python</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>java</option>
+                        <option>php</option>
+                        <option>my sql</option>
+                    </select>
+                </td>
+            </tr>
             <tr>
                 <td></td>
+                <!-- <td><button onclick="alert('hello i am button')" >register</button></td> -->
+                <!-- when we make a button using button tag so this type button submit form and alos call js evant/js function -->
+                <!-- <td> <input onclick="alert('hello js')" type="button" value="register"></td> -->
+                <!-- when we set input type button so that type button not submit form but 
+                 we can call event/javascript function to click that type button -->
                 <td><input type="submit" value="register"> <input type="reset" value="clear"></td>
             </tr>
         </table>
     </form>
-</body>              
+</body>
+
 </html>
