@@ -5,7 +5,9 @@
 </head>
 
 <body style="background-color: antiquewhite;">
-    <h3 style="background-color:white;text-align: center;margin-right: 80px; margin-top: 60px;width: 400px;margin-left: 300px;padding: 10px 0 10px 0;margin-bottom: 0;">Registration form </h3>
+    <h3
+        style="background-color:white;text-align: center;margin-right: 80px; margin-top: 60px;width: 400px;margin-left: 300px;padding: 10px 0 10px 0;margin-bottom: 0;">
+        Registration form </h3>
     <!-- method attribute value :- 
      get:- its show data in url so its not secure method.
             its take 2 - 5 mb data from clint side to serverside
@@ -15,25 +17,26 @@
         its slow method compare to get method.
 
     -->
-    <form style="background-color: white;width: 400px;margin-left: 300px;"  action="03_registration.html" method="get">
+    <form style="background-color: white;width: 400px;margin-left: 300px;" action="03_registration.html" method="get">
         <table align="center">
             <tr>
                 <th>Name</th>
-                <td><input style="border-radius: 7px;" type="text" name="uname"></td>
+                <td><input style="border-radius: 7px;" type="text" name="uname" pattern="[a-zA-Z ]+" required
+                        title="please enter characters"></td>
             </tr>
             <tr>
-                <th>Fname</th>
-                <td><input type="text" name="fname"></td>
+                <th>mobile</th>
+                <td><input type="text" name="fname" pattern="[0-9]+" required minlength="10" maxlength="10"></td>
             </tr>
             <tr>
                 <th>Password</th>
-                <td><input type="password" name="pass"></td>
+                <td><input type="password" name="pass" required></td>
             </tr>
 
             <tr>
                 <th>Gender</th>
                 <td>
-                    male <input type="radio" name="gender" value="male">
+                    male <input type="radio" name="gender" value="male" required>
                     female <input type="radio" name="gender" value="female">
                 </td>
             </tr>
@@ -52,7 +55,7 @@
             <tr>
                 <th>Select State</th>
                 <td>
-                    <select name="state">
+                    <select name="state" required>
                         <option>---</option>
                         <option value="madhya-pradesh">MP</option>
                         <option>UP</option>
@@ -64,7 +67,7 @@
             <tr>
                 <th>Select Skill</th>
                 <td>
-                    <select name="skill" multiple size="3">
+                    <select name="skill" multiple size="3" required>
                         <option>C/C++</option>
                         <option>python</option>
                         <option>HTML</option>
@@ -77,14 +80,14 @@
             </tr>
             <tr>
                 <th>select file</th>
-                <td><input type="file" name="file"></td>
-            </tr>
-             <tr>
-                <th>select files</th>
-                <td><input type="file" name="file" multiple></td>
+                <td><input type="file" name="file" required></td>
             </tr>
             <tr>
-                <td><input style="margin-left: 60px;" type="checkbox" name="check" value="agree" ></td>
+                <th>select files</th>
+                <td><input type="file" name="files" multiple required></td>
+            </tr>
+            <tr>
+                <td><input required style="margin-left: 60px;" type="checkbox" name="check" value="agree"></td>
                 <th>do you agree with terms and condition</th>
             </tr>
             <tr>
