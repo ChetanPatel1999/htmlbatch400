@@ -1,0 +1,12 @@
+input{
+    height: 40px;
+    border-radius: 10px;
+}
+body{
+    background-color: aqua;
+    font-size: 30px;
+}
+h1{
+    color: azure;
+    background-color: blueviolet;
+}
