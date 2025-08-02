@@ -1,0 +1,72 @@
+<!-- 
+selector :- selector is used to select html element in 
+css for style/desgine html element. 
+there are 4 types selector in css 
+1. element selector
+2. universale selector
+3. id selector
+4. class selector
+-->
+<style>
+    /* element selectors in css */
+    h1 {
+        color: blue;
+        text-align: center;
+        background-color: blanchedalmond;
+    }
+
+    button {
+        color: blue;
+        background-color: rgb(237, 100, 100);
+        height: 40px;
+        width: 110px;
+        font-size: 20px;
+    }
+
+    ol {
+        color: red;
+        font-weight: 900;
+    }
+
+    p,
+    a,
+    strong {
+        color: darkmagenta;
+        font-size: 30px;
+    }
+
+    div {
+        border: 2px solid red;
+    }
+
+    div h1,
+    p {
+        background-color: #E1AA36;
+        color: #239BA7;
+    }
+</style>
+
+<body>
+    <!-- 
+    when we applay internal css on any html element and after that
+    we again appaly internal css same element so second time appaly
+    css is override previous css .
+
+    inline css have more priority than internal css.
+    
+    -->
+    <h1 style="color:red">hello students </h1>
+    <h1>yashraj solanki</h1>
+    <div>
+        <h1>inside div heading</h1>
+    </div>
+    <button>click me</button>
+    <ol>
+        <li>apple</li>
+        <li>banana</li>
+        <li>mango</li>
+    </ol>
+    <p>hello students please practice html and css atlist three times in day</p>
+    <a href="#">open gift</a><br>
+    <strong>hay bro</strong>
+</body>
