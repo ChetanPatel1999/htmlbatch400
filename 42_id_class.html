@@ -1,0 +1,64 @@
+<!-- 
+css selectors priority 
+// id have more priority that element selector
+// we cant use two id for same element if use same id so 
+// first id css is appaly.
+// inline css have more priority then class and id.
+
+//we can use id and class in same html element but id have more
+// priority then class.
+
+//we cant have two class attribute in same html element.
+// but we can appaly two different class css propery in one
+//one class type atrtribute like class="cls1 cls2"
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #id1 {
+            background-color: blue;
+            font-size: 50px;
+        }
+
+        #id2 {
+            font-family: cursive;
+            color: rgb(129, 20, 202);
+        }
+
+        h1 {
+            color: blanchedalmond;
+            background-color: black;
+        }
+
+        .myclass {
+            color: chocolate;
+            font-size: 40px;
+        }
+
+        .cls1 {
+            background-color: darkviolet;
+            color: white;
+            font-size: 30px;
+        }
+
+        .cls2 {
+            border-radius: 20px;
+            font-size: 30px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="id2" id="id1" style="color: red;">hello students</h1>
+    <h1>indore city</h1>
+    <p class="myclass" id="id2">this my paragraph</p>
+    <button class="cls2 cls1">click me</button>
+</body>
+
+</html>
