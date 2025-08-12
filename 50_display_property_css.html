@@ -1,0 +1,106 @@
+<!-- display property in css -->
+<!-- 
+display :-  its decide our html element display on webpage inline or block.
+inline :-takes only space required by the element no margin set top or bottom.
+block :- take full space available in width.
+inline block :- similar to inline but we can set margine & padding.
+none :-To remove element from document flow,no space is reserved for element. 
+ -->
+<!-- 
+Visibility:-
+visibility : hidden;
+space is reserved for element. 
+-->
+<!-- 
+Alpha Channel
+opacity(0 to 1)
+RGBA
+color : rgb(255,0,0,0.5)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            width: 300px;
+            /* display: inline; */
+            display: inline-block;
+            margin-right: 50px;
+            margin-top: 100px;
+        }
+        div {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            margin: 10px 0px;
+            display: inline-block;
+
+        }
+
+        button {
+            display: block;
+            margin: 10px 0px;
+        }
+
+        a {
+            display: block;
+            margin: 20px 0px;
+        }
+
+        #box1 {
+            background-color: rgb(255, 0, 0, 0.7);
+        }
+
+        #box2 {
+            /* display: none; */
+            /* visibility: hidden; */
+            background-color: rgb(255, 0, 0, 0.5);
+        }
+
+        #box3 {
+            background-color: rgb(255, 0, 0, 0.6);
+        }
+
+        #box4 {
+            background-color: rgb(0, 0, 0,0.7);
+            
+        }
+
+        #box5 {
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        #id1 {
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+    <br>
+    <h1>hello student</h1>
+    <h1 id="id1">how are you</h1>
+    <h1>tumhare to maje hai</h1>
+    <p>this para1</p>
+    <p>this para2</p>
+    <button>click me!</button>
+    <button>get more info</button>
+    <button>get course detail</button>
+    <a href="">home</a>
+    <a href="">about us</a>
+    <a href="">gallary</a>
+    <p>its para 3</p>
+</body>
+
+</html>
