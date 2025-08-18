@@ -1,0 +1,66 @@
+<!-- 
+ how to add background image 
+   background-image: url(images/kedarnath.jpg);
+   background-size:cover;
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px 40px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+        #box1 {
+            background-image: url(images/fox.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #box2 {
+            background-image: url(images/computer.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box3 {
+            background-image: url(images/flag1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        body {
+            background-image: url(images/flag2.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        box1
+    </div>
+    <div id="box2">
+        box2
+    </div>
+    <div id="box3">
+        box3
+    </div>
+</body>
+
+</html>
