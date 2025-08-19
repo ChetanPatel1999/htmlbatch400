@@ -1,0 +1,69 @@
+<!-- What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->
+<!-- hover pseudo class code is work when we over mouse on link -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin-left: 200px;
+            margin-top: 200px;
+            height: 40px;
+            width: 120px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: brown;
+            /* height:100px; */
+            /* margin-top: 20px; */
+            /* display: none; */
+            border-radius: 0px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        img:hover {
+            border-radius: 50%;
+            opacity: 50%;
+            border: 8px solid blue;
+        }
+
+        .box {
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+        }
+        .box:hover {
+            background-color: chocolate;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>click me!</button>
+    <img src="images/pecock.jpg">
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
