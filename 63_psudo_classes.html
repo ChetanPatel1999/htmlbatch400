@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+            background-color: aqua;
+        }
+
+        /* when we want to style disabled element so we use disabled pseudo class */
+        input:disabled {
+            color: red;
+            background-color: black;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+
+        div:empty {
+            background-color: pink;
+        }
+
+        h1 {
+            border: 1px solid red;
+            height: 30px;
+        }
+
+        h1:empty {
+            background-color: pink;
+        }
+
+        #checkbox {
+            background-color: red;
+        }
+
+        #checkbox:checked {
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text" value="hariom" disabled>
+    <input type="text">
+    <input type="text">
+
+    <div>box1</div>
+    <div>box2</div>
+    <div></div>
+    <div>box4</div>
+    <h1>hello students</h1>
+    <h1>hello students</h1>
+    <h1></h1>
+    <h1>hello students</h1>
+    <h1>hello students</h1>
+
+    <input id="checkbox" type="checkbox">
+</body>
+
+</html>
