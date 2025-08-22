@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            color: blue;
+        }
+
+        input::placeholder {
+            color: red;
+        }
+
+        h3 {
+            margin: 5px 0px;
+        }
+
+        h3::before {
+            content: 'hello ';
+            color: red;
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        h3::after {
+            content: '\2605';
+        }
+
+        ul li {
+            color: green;
+            list-style: none;
+            padding-left: 40px;
+            margin: 10px 0px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            background-image: url(check-box.png);
+            background-size: cover;
+            background-position: center;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 15px;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type=" text" placeholder="enter your text">
+
+
+    <h3>i am student of iist</h3>
+    <h3>i completed my b.tech 2023</h3>
+    <h3>i am live in ujjain </h3>
+
+    <ul>
+        <li>book</li>
+        <li>pen</li>
+        <li>colors</li>
+    </ul>
+</body>
+
+</html>

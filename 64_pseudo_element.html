@@ -1,0 +1,82 @@
+<!-- A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        /* its design  first line of element */
+        p::first-line {
+            color: blue;
+            font-weight: 600;
+        }
+
+        /* its design first later of paragraph */
+        p::first-letter {
+            background-color: burlywood;
+            font-size: 30px;
+        }
+
+        /* when we select paragraph that time change background color or text color */
+        p::selection {
+            color: chartreuse;
+            background-color: black
+        }
+
+        ol li {
+            color: darkmagenta;
+        }
+
+        /* ::marker targets the bullet or number in list items (<li>) of ordered (<ol>) and unordered (<ul>) lists. */
+        /* ::marker can style color, font-family, font-size, and some text properties, but not layout properties like margin, padding, or transform. */
+
+        ol li::marker {
+            color: blue;
+            font-weight: 600;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure ipsam maxime adipisci magni reiciendis expedita
+        sapiente veniam consequuntur unde laboriosam quia cumque qui fugiat sed, est reprehenderit consequatur nisi
+        omnis, quidem voluptatum exercitationem porro magnam blanditiis? Possimus quos suscipit praesentium laudantium,
+        voluptas ratione doloribus consectetur, nisi sequi accusantium cum expedita error quo consequatur enim quaerat
+        dolorum placeat in, temporibus minus odit quisquam. Cum modi debitis odio. Alias, placeat veritatis, voluptas
+        natus mollitia eveniet unde obcaecati sint quam accusamus quibusdam incidunt similique corrupti sed enim et nemo
+        quisquam nihil distinctio quo culpa dolores tempore fugiat! Hic architecto aperiam impedit ab, asperiores
+        blanditiis ad possimus, magnam eos doloremque laudantium nulla amet provident aliquid illo maiores nostrum
+        tempora? Aspernatur totam dolorem reprehenderit facere quidem hic cumque. Ea, ullam necessitatibus eligendi sunt
+        odit labore minus delectus. Iste, eius delectus libero, iure ea ipsa, ullam nihil facilis tenetur neque aliquid
+        in maxime quod suscipit explicabo voluptate. Aliquid quas doloremque facere architecto sit quasi, corrupti,
+        explicabo unde earum ad at? Amet eum architecto aliquid recusandae tenetur quaerat vitae, eaque mollitia. Fugiat
+        ipsa velit illum quaerat voluptatum molestiae atque praesentium tenetur quasi. Similique, quod. Quae obcaecati
+        omnis praesentium est sapiente modi ad dicta repudiandae similique numquam?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, et consequatur ex in commodi pariatur
+        numquam illum similique aliquid totam, minima tempora, nostrum a unde nobis facilis atque perferendis vero
+        blanditiis illo? Nesciunt dolor facilis ut impedit magni ex beatae porro, sequi eum dicta quidem adipisci
+        quaerat alias eos, ipsa eius iusto, eaque quo unde nobis fugit earum. Dicta voluptatem a explicabo accusamus
+        sapiente, ex eligendi molestiae vel, excepturi sunt culpa id quaerat dolor expedita natus ducimus! Unde aperiam
+        magnam necessitatibus dolores sequi, laborum neque, corrupti excepturi aliquid velit quasi illo temporibus
+        inventore facere assumenda dolorum eveniet cupiditate ex labore!</p>
+    <ol>
+        <li>pen</li>
+        <li>book</li>
+        <li>colors</li>
+    </ol>
+</body>
+
+</html>
