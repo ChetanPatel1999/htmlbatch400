@@ -1,17 +1,23 @@
 <!-- 
 Flex Properties
+ for Flex Item
 
- for Flex Container
+ align-self : alignment of individual along the cross axis. 
 
- justify-content : alignment along the main axis. 
- flex-start / flex-end / centre / space-evenly / space-around / space-between
+ flex-grow : how much a flex item will grow relative to the rest of the flex items if
+ space is available
 
- flex-wrap : nowrap / wrap / wrap-reverse
+ flex-shrink  :  how much a flex item will shrink relative to the rest of the flex items if
+ space is availabl
 
- align-items : alignment along the cross axis.
-
- align-content : alignment of space between & around the content along cross-axi 
 -->
+<!-- 
+ Qs:
+ Create a navbar with 4 options in the form of anchor tags inside list items.
+ Now, use flexbox to place them all spaced equally in a single line.
+ 
+ Use flexbox to center one div inside another div.
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,15 +31,12 @@ Flex Properties
             width: 800px;
             height: 500px;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            /* flex-wrap: wrap; */
+            justify-content: space-evenly;
             align-items: center;
-            /* align-content: center; */
         }
 
         div {
-            width: 100px;
+            width: 400px;
             height: 50px;
             border: 1px solid black;
             text-align: center;
@@ -44,18 +47,27 @@ Flex Properties
 
         #box1 {
             background-color: blue;
+            /* align-self: flex-end; */
+            /* flex-shrink: 2; */
+            flex-basis: 25%;
         }
 
         #box2 {
             background-color: red;
+            /* flex-grow: 1; */
+            flex-basis: 25%;
         }
 
         #box3 {
             background-color: blueviolet;
+            /* align-self: center; */
+            /* flex-shrink: 2; */
+            flex-basis: 50%;
         }
 
         #box4 {
             background-color: yellowgreen;
+            /* flex-grow: 1; */
         }
 
         #box5 {
@@ -69,7 +81,7 @@ Flex Properties
         <div id="box1">box1</div>
         <div id="box2">box2</div>
         <div id="box3">box3</div>
-        <div id="box4">box4</div>
+        <!-- <div id="box4">box4</div> -->
         <!-- <div id="box5">box5</div> -->
 
     </div>
