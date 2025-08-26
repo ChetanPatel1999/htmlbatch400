@@ -1,27 +1,59 @@
+<!-- Qs:
+Create a navbar with 4 options in the form of anchor tags inside list items.
+Now, use flexbox to place them all spaced equally in a single line.
+
+Use flexbox to center one div inside another div. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul{
+        ul {
             display: flex;
             justify-content: space-evenly;
             background-color: blue;
             padding: 20px 0px;
         }
-        ul li{
+
+        ul li {
             list-style: none;
         }
-        ul li a{
+
+        ul li a {
             text-decoration: none;
             color: white;
             font-size: 20px;
             font-weight: 600;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        ul li a:hover {
+            background-color: red;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            border: 2px solid red;
+            margin: 50px auto 0px;
+
+        }
+
+        .inside-box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
         }
     </style>
 </head>
+
 <body>
     <ul>
         <li><a href="#">Home</a></li>
@@ -29,5 +61,9 @@
         <li><a href="#">gallary</a></li>
         <li><a href="#">contact</a></li>
     </ul>
+    <div class="container">
+        <div class="inside-box"></div>
+    </div>
 </body>
+
 </html>

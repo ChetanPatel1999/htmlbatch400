@@ -1,0 +1,74 @@
+<!-- media quary :- its used to make web site responsive -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 200px;
+            border: 2px solid red;
+            background-color: blue;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60px;
+        }
+
+        /* @media(width:801px) {
+            div {
+                width: 400px;
+                background-color: burlywood;
+            }
+        } */
+        /* @media(max-width:600px) {
+            div {
+                width: 300px;
+                background-color: burlywood;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        } */
+        /* 
+        @media(min-width:1000px) or (max-width:600px)
+        /* before 600px   and after 1000 px*/
+        /* {
+            div {
+                width: 300px;
+                background-color: burlywood;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        } */
+
+        @media(max-width:1000px) and (min-width:600px)
+
+        /* between 600px to 1000px*/
+            {
+            div {
+                width: 300px;
+                background-color: burlywood;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>hello i am chetan patel </h1>
+    </div>
+</body>
+
+</html>
