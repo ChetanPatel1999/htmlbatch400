@@ -1,0 +1,63 @@
+<!-- CSS Transform
+ Used to apply 2D & 3D transformations to an element
+
+ rotate
+ transform: rotate(45deg);
+
+ CSS Transform
+ scale
+ transform: scale(2);
+ transform: scale(0.5);
+ transform: scale(1, 2);
+ transform: scaleX(0.5);
+ transform: scaleY(0.5)
+
+ CSS Transform
+ translate
+ transform: translate(20px);
+ transform: translate(20px, 50px);
+ transform: translateX(20px);
+ transform: translateY(20px);
+
+ CSS Transform
+ skew
+ transform: skew (30deg); -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            margin: 100px auto 0px;
+            /* transform: rotate(45deg); */
+            transition: all 1s;
+        }
+
+        div:hover {
+            /* transform: rotate(360deg); */
+            /* transform: rotateX(360deg); */
+            /* transform: rotateY(360deg); */
+            /* transform: scale(3); */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(2); */
+            /* transform: scale(5,2); */
+            /* transform: translate(200px); */
+            /* transform: translateY(-200px); */
+            /* transform: translateX(-200px); */
+            /* transform: translate(100px,500px); */
+            transform: skew(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
