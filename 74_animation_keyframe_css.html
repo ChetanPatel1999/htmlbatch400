@@ -1,0 +1,95 @@
+<!--
+ Animation
+ To animate CSS element 
+
+ The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from
+ one set of CSS styles to another.
+
+During the animation, you can change the set of CSS styles many times.
+
+Specify when the style change will happen in percent, or with the keywords 
+"from" and "to", which is the same as 0% and 100%. 0% is the beginning of 
+
+@keyframes animationname {keyframes-selector {css-styles;}}
+
+the animation, 100% is when the animation is complete.
+ @keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+ }
+ Animation Properties
+ animation-name
+ animation-duration
+ animation-timing-function 
+ animation-delay
+ animation-iteration-count
+ animation-direction
+
+ Animation Shorthand
+ animation : myName 2s linear 3s infinite normal
+
+ % in Animation
+ @keyframe myName {
+ 0% { font-size : 20px; }
+ 50% { font-size : 30px; }
+ 100% { font-size : 40px; }
+ 
+ Create a simple loader using CSS
+ Step1 : create a div with circular shape & a thick border from one end
+ (top/bottom/left/right)
+ Step2 : To make it spin create an animation which transforms it from 0deg to 360deg
+ Step3 : Add the animation property to the loader with infinite duration
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 100px;
+            border-radius: 5px;
+            animation-name: movebox;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            /* animation-delay:2s; */
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes movebox {
+            from {
+                /* transform: translate(0px); */
+                margin-left: 0px;
+                background-color: red;
+                transform: rotate(0deg);
+                /* transform: scale(1); */
+                width: 100px;
+                height: 100px;
+            }
+
+            to {
+                margin-left: 500px;
+                /* transform: translate(300px); */
+                background-color: blue;
+                transform: rotate(360deg);
+                /* transform: scale(2); */
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
