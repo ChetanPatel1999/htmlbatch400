@@ -1,0 +1,47 @@
+<!-- 
+how many types to display js output 
+ print on document = document.write(" hello ");
+ print on console = console.log("hello");  (important)
+ print on pop up =  alert("hello ")
+
+ print inside html element  
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="res">hello</p>
+    </div>
+    <script>
+        let a = 12, b = 5, c
+        c = a + b;
+        document.write("addition = ", c);
+        console.log("addition = " + c)
+        console.log("sum of ", a, "and", b, "=", c)
+        // alert("addition = "+c)
+        document.getElementById("res").innerText = "addition = " + c
+    </script>
+</body>
+
+</html>

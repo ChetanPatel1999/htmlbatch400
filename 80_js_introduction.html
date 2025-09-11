@@ -45,28 +45,37 @@ java script in html page two types
 internal js
 external js
 -->
+<!-- internal js  -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
     <script>
-        //here we write code subtraction
-        num1 = 12
-        num2 = 5;
-        sub = num1 - num2;
-        console.log("subtraction = ", sub);
-        document.write("subtraction = ", sub, "<br>");
+        document.write("hello js<br>");
     </script>
 </head>
 
 <body>
     <script>
-        //  here we write simple addition program
-        a = 12346523534652;
-        b = 1;
+        a = 6;
+        b = 5;
         c = a + b;
-        document.write("addition = ", c);
-        console.log("hello console");
+        document.write("addition = ", c)
+    </script>
+    <script>
+        age = 12;
+        if (age >= 18) {
+            document.write("<br>you can vote");
+        }
+        else {
+            document.write("<br><h1>you can not vote<h1>");
+        }
     </script>
 </body>
 
