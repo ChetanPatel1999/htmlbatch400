@@ -1,0 +1,60 @@
+<!-- there two types of for loop
+  for of loop:-The for…of loop iterates over iterable objects (like arrays, strings, Maps, Sets) and gives values directly.
+  for in loop:- 
+-->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    // console.log(arr)
+    // console.log("array length :", arr.length)
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i])
+    // }
+
+    for (let value of arr) {
+        console.log(value)
+        console.log("hello!")
+    }
+
+</script> -->
+<!-- <script>
+    //wap to print square of array element.
+    let arr = [2, 6, 3, 9, 4];
+    for (let val of arr) {
+        console.log(val + " = " + (val * val));
+    }
+</script> -->
+<!-- <script>
+    //wap to print only even element from array.
+    let arr = [2, 6, 3, 9, 4];
+    for (let val of arr) {
+        if (val % 2 == 0) {
+            console.log(val);
+        }
+    }
+</script> -->
+
+<!-- <script>
+    let name = "chetan";
+    // for (let i = 0; i < name.length; i++) {
+    //     console.log(name[i]);
+    // }
+    for (char of name) {
+        console.log(char);
+    }
+
+</script> -->
+
+<script>
+    let name = "chetan";
+    let newstr = ""
+    for (char of name) {
+        if (char == name[name.length - 1]) {
+            newstr = newstr + char;
+        }
+        else {
+            newstr = newstr + char + '--';
+        }
+    }
+    console.log(newstr);
+</script>

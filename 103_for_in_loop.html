@@ -1,0 +1,26 @@
+<!-- 
+The for…in loop iterates over enumerable properties of an object (including arrays, but it gives keys/indexes, not values). 
+-->
+<!-- <script>
+    let arr = [12, 34, 56, 78];
+    for (val in arr) {
+        console.log(val, " = ", arr[val]);
+    }
+</script> -->
+<script>
+    let student = {
+        name: "raj varma",
+        rno: 102,
+        per: 89.56
+    }
+    // console.log(student);
+    for (key in student) {
+        console.log(key, " = ", student[key]);
+    }
+
+    let name = "raj varma";
+
+    for (value of name) {
+        console.log(value);
+    }
+</script>
