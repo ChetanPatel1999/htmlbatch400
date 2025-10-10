@@ -1,0 +1,42 @@
+<!-- space pattern in js  -->
+<!-- 
+* * * * *
+  * * * *
+    * * *
+      * *
+        * -->
+<!-- <script>
+    let row, pattern = ""
+    for (let i = 1; i <= 5; i++) //3
+    {
+        row = ""
+        for (let s = 1; s < i; s++) {
+            //space
+            row = row + "  ";
+        }
+        for (let j = i; j <= 5; j++) {
+            //start
+            row = row + "* ";
+        }
+        pattern = pattern + row + "\n";
+    }
+    console.log(pattern);
+</script> -->
+
+<script>
+    let row, pattern = ""
+    for (let i = 1; i <= 5; i++) //3
+    {
+        row = ""
+        for (let s = 1; s < i; s++) {
+            //space
+            row = row + "  ";
+        }
+        for (let j = i; j <= 5; j++) {
+            //start
+            row = row + j + " ";
+        }
+        pattern = pattern + row + "\n";
+    }
+    console.log(pattern);
+</script>
