@@ -1,0 +1,71 @@
+<!-- <script>
+    outer:
+    for (i = 1; i <= 5; i++)//2
+    {
+        inner:
+        for (j = 1; j <= 5; j++) {
+            console.log(j + " hello world\n");
+            if (j == 3) {
+                break inner;
+            }
+        }
+        console.log("------------------------");
+    }
+</script> -->
+
+<!-- <script>
+    outer:
+    for (i = 1; i <= 5; i++)//2
+    {
+        inner:
+        for (j = 1; j <= 5; j++) {
+            if (j == 3) {
+                continue outer;
+            }
+            console.log(j + " hello world\n");
+        }
+        console.log("------------------------");
+    }
+</script> -->
+
+<!-- <script>
+    outer:
+    for (i = 1; i <= 5; i++)//2
+    {
+        inner:
+        for (j = 1; j <= 5; j++) {
+            for (k = 1; k <= 5; k++) {
+                if (j == 3) {
+                    break inner;
+                }
+                console.log(j + " hello world\n");
+            }
+
+        }
+        console.log("------------------------");
+    }
+</script> -->
+
+<script>
+    //wap to find a first char in string which repetation count is 3.
+    let str = "heeelloooppp"
+    let count, i, j;
+    outer:
+    for (i = 0; i < str.length; i++) //4
+    {
+        count = 0;
+        for (j = i; j < str.length; j++) //5
+        {
+            if (str[i] == str[j]) {
+                count++;
+            }
+            if (count == 3) {
+                break outer;
+            }
+        }
+
+    }
+    console.log("frist 3 times appearing char is = ", str[i])
+
+
+</script>

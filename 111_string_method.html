@@ -1,0 +1,54 @@
+<!-- 
+ let str="hi";
+ str.length;
+ str.toLowerCase()
+ str.toUpperCase();
+ str.includes("ram") // if ram in str so true or false.
+ str.startsWith("ram");
+ str.endsWith("ram");
+ str.search("ram");// return ram position index or if not found return -1 
+ str.match("ram"); // if find so return ram or not so return null
+ str.match(/ram/g); // print ram multiple times or not return null
+ str.indexOf("ram") // find index or not substr print -1
+ 
+ n.lastIndexOf("ram");// find last reapet element index
+ n.replace("ram","chetan");
+ n.replace(/ram/g,"chetan");//all ram replace with chetan
+ n.replaceAll("ram","chetan");//all ram replace with chetan
+ n.trim(); //  for unwanted space
+ n.charAt(4); //find pass position char
+ n[2]; // also use index
+ n.charCodeAt(0);// dispaly ascii code for pass position char
+ String.fromCharCode(n);// display char for pass ascii code
+ n.concat(" ").concat("patel"); // combine two string
+ n.split(" "); // spilt string to pass element and return array type object
+ n.repeat(5)// repeat string pass number times
+ n.slice(2,6);//return 2 to 5 index element string
+ n.substr(4,2); // extract sub string start 4 and 2 elemt extract
+ n.substring(4,8); //extract sub string start 4 and end 7 index 
+-->
+<script>
+    let str = "good my morning my name is chetan my ";
+    console.log(str.indexOf("y"))
+
+</script>
+<!-- <script>
+    let str = "good morning my name is chetan ";
+    let sub = "chetan";
+    if (str.search(sub) != -1) {
+      console.log(`${sub} is find at position ${str.search(sub)}`)
+    }
+    else{
+        console.log(`${sub} is not found`);
+    }
+
+</script> -->
+<!-- <script>
+    let str = "abc123@gmal.com";
+    if (str.endsWith("@gmail.com")) {
+        console.log("valid gmail");
+    }
+    else {
+        console.log("invalid gmail");
+    }
+</script> -->
