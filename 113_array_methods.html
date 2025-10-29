@@ -1,0 +1,99 @@
+<!-- 
+arr.length 
+arr.pop() //last element remove and return
+arr.push() // single and multiple element at last
+arr.reverse()// reverse array and also return reverse array
+Array.isArray(arr)// check arr is array or not and return true and false
+
+arr.join('+') // join all array element with + sign and return string
+arr.slice(2,4) // return only 2 to 3 index value like python slicing
+arr.splice(1,2,"hy","by","mai") // arr.splice(start,delete(count),newvalues) // to change some value in array
+arr.toString(); // convert array into string and return string but actual array is not change
+arr.at(0)  // fetch element by at method passing index
+delete arr[0] // delete frist element and leave undifined holes
+arr.shift()  // this method delete frist elemnet and also return  and shift all element at lower index
+arr.unshif(666) // this method add element at the bignning and also return size of new array
+arr1.concat(arr2) // combine two array and return new array 
+arr1+arr2 // combine two array and return string
+-->
+<script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    arr.splice(3, 0, 700);
+    console.log(arr)
+</script>
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    let res = arr.unshift(5, 9); //first element delter and shift rmaining element left side
+    console.log(arr)
+    console.log(res)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    arr.shift(); //first element delter and shift rmaining element left side
+    console.log(arr)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    delete arr[3]
+    console.log(arr);
+    for (i of arr) {
+        console.log(i);
+    }
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr.at(3));
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr);
+    let res = arr.splice(2,1, "home", 300);
+    console.log(res);
+    console.log(arr);
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    let res = arr.slice(1,4);
+    console.log(res);
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    let res = arr.toString();
+    console.log(res);
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    let res = arr.join("+"); // "12+34+56+78+90"
+    console.log(res);
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    let age = 67;
+    console.log(Array.isArray(arr));
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr);
+    arr.reverse();
+    console.log(arr);
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90, 28, 77];
+    console.log(arr);
+    let res = arr.pop();
+    console.log(res);
+    arr.pop();
+    console.log(arr);
+    arr.push(500);
+    console.log(arr);//[12, 34, 56, 78, 90,500]
+    arr.push(200, "home", true);
+    console.log(arr);//[12, 34, 56, 78, 90,500,200,"home",true]
+</script> -->

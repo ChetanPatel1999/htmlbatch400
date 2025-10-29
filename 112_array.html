@@ -1,0 +1,110 @@
+<!--
+An array in JavaScript is a data structure used to store multiple values in a 
+single variable. It can hold various data types and allows for dynamic resizing. 
+Elements are accessed by their index, starting from 0. 
+
+You have two ways to create JavaScript Arrays: using the Array constructor or the 
+shorthand array literal syntax, which is just square brackets. Arrays are flexible
+in size, so they can grow or shrink as you add or remove elements.
+
+Basic Terminologies of JavaScript Array
+Array: A data structure in JavaScript that allows you to store multiple values
+       in a single variable.
+Array Element: Each value within an array is called an element. Elements are 
+       accessed by their index.
+Array Index: A numeric representation that indicates the position of an element 
+       in the array. JavaScript arrays are zero-indexed, meaning the first element is at
+       index 0.
+Array Length: The number of elements in an array. It can be retrieved using the
+       length property.
+  -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr);
+    console.log(arr.length);
+    // console.log(arr[0]);
+    // console.log(arr[1]);
+    // console.log(arr[2]);
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    for (let i of arr) {
+        console.log(i);
+    }
+</script> -->
+<!-- <script>
+    let arr = [34, 6.7, "home", true];
+    for (let ele of arr) {
+        console.log(ele);
+    }
+    arr.push(800);
+    console.log(arr);
+    arr.push(123);
+    console.log(arr);
+
+    arr.pop();
+
+    console.log(arr);
+    delete arr[3]
+    console.log(arr);
+</script> -->
+
+<!-- <script>
+    let arr = [];
+    console.log(arr);
+    arr[0] = 90;
+    arr[2] = 77;
+    console.log(arr);
+</script> -->
+
+<!-- <script>
+    //we can make array using constructor
+    // let arr = new Array(12, 34, 56, 78, 90);
+    // console.log(arr)
+    // for (i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+
+    let arr=new Array();
+    console.log(arr);
+</script> -->
+
+<!-- <script>
+    let arr = [];
+    arr["name"] = "chetan";
+    arr["age"] = 78;
+    arr["ispass"] = true;
+    console.log(arr);
+</script> -->
+
+<!-- <script>
+    //wap to sum array element.
+    let arr = [2, 4, 6, 3, 8];
+    let sum = 0;
+    for (let i of arr) {
+        sum = sum + i;
+    }
+    console.log(sum);
+</script> -->
+
+<!-- <script>
+    //wap to print only even element.
+    let arr = [2, 5, 6, 3, 8];
+    for (let i of arr) {
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+    }
+
+</script> -->
+<script>
+    //wap to print average of array.
+    let arr = [2, 4, 6, 3, 8];
+    let sum = 0;
+    for (let i of arr) {
+        sum = sum + i;
+    }
+    console.log("avrage of array : ",sum/arr.length);
+</script>
