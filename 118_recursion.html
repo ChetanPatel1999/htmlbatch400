@@ -1,0 +1,95 @@
+<!-- recursion in javascript -->
+<!-- <script>
+    //its run infinite times
+    function printMsg() {
+        console.log("hello world institute");
+        printMsg(); //recursive calling
+    }
+
+
+    printMsg();
+</script> -->
+
+
+<!-- <script>
+    //wap to print a msg 5 times using recursion.
+    let i = 1;
+    function printMsg() {
+        console.log("hello world institute");
+        i++;//6
+        if (i <= 5) {
+            printMsg();
+        }
+    }
+
+    printMsg();
+</script> -->
+
+
+<!-- <script>
+    //wap to print a number 1 to 10 using recursion.
+    let i = 1;
+    function printNumber() {
+        console.log(i);
+        i++;//3
+        if (i <= 10) {
+            printNumber();
+        }
+    }
+
+    printNumber();
+</script> -->
+
+
+<!-- <script>
+    //wap to print a even number 1 to 10 using recursion.
+    let i = 1;
+    function printEvenNumber() {
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+        i++;//3
+        if (i <= 10) {
+            printEvenNumber();
+        }
+    }
+
+    printEvenNumber();
+</script> -->
+
+<!-- <script>
+
+    function printNumber(num) {
+        console.log(num);
+        if (num > 1) {
+            printNumber(num - 1);
+        }
+    }
+
+    printNumber(20);
+</script> -->
+
+<!-- <script>
+    function fun() {
+        console.log("hello fun");
+    }
+    function world() {
+        console.log("hello world");
+        fun();
+
+    }
+
+    world();
+</script> -->
+
+
+<script>
+    function printNumber(num) {
+        if (num > 1) {
+            printNumber(num - 1);
+        }
+        console.log(num);
+    }
+
+    printNumber(10);
+</script>

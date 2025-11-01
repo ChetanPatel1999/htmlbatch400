@@ -1,0 +1,63 @@
+<!-- 
+arrow function :- 
+its introduce in  modern js 
+Arrow Functions :- Compact way of writing function  
+Arrow functions are a shorter syntax for writing functions in JavaScript, introduced in ES6 (ECMAScript 2015). 
+// Basic Structure:
+const functionName =(param1,param2... )=> {
+// do some work
+}
+-->
+<script>
+    // function add(a, b) {
+    //     return a + b;
+    // }
+
+    // const add = (a, b) => {
+    //     return a + b;
+    // }
+
+
+    // const add = (a, b) => a + b;
+
+    // console.log(add(3, 8));
+    // console.log(add(45, 8));
+
+    // function printmsg() {
+    //     console.log("hello world institute");
+    // }
+
+
+    //sigle line arrow function without parameter
+    // const printmsg = () => console.log("hello world institute");
+
+    // const printmsg = () => {
+    //     console.log("hello world institute");
+    //     console.log("this is multiline arrow function");
+    // }
+
+    // printmsg();
+
+
+    //example of single line arrow function with parameter
+    // const square = (num) => num * num;
+
+    // const cube = (num) => num * num * num;
+
+    // const average = (a, b) => (a + b) / 2;
+
+    // console.log("square = ", square(6));
+    // console.log("cube = ", cube(4));
+
+
+    //example of multline arrow function
+    const factorial = (num) => {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+    let res = factorial(5);
+    console.log(res)
+</script>
