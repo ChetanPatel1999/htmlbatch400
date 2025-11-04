@@ -1,0 +1,108 @@
+<!-- 
+arr.map(callback_function);
+ arr.map method perform some operation on each array element and return
+ a new array . 
+-->
+<script>
+    // let arr = [2, 4, 6, 3, 7];
+    // arr.forEach((val) => console.log(val +5));
+
+    //wap to create a new array with priviuse array element square.
+    // let newarr = arr.map((val) => val * val);
+    // console.log(arr);
+    // console.log(newarr);
+
+
+    // let newarr = [];
+    // let square;
+    // for (let i = 0; i < arr.length; i++) {
+    //     square = arr[i] * arr[i];
+    //     newarr.push(square);
+    // }
+    // console.log(arr);
+    // console.log(newarr);
+
+    // let arr = [2, 4, 6, 3, 7];
+    // //create new array with all element cube of privious array
+    // let cubearr = arr.map((val) => val * val * val);
+    // console.log(arr);
+    // console.log(cubearr);
+
+
+    // let arr = [2, 4, 6, 3, 7];
+    // //create new array with all element have +5 incrasing  of privious array
+    // let cubearr = arr.map((val) => val + 5);
+    // console.log(arr);
+    // console.log(cubearr);
+
+
+    //arr.filter(callback_function);
+
+    //arr.filter mathod is used to fliter privius array and return a new arr.
+
+    //wap to create new array which have only even value from previus array.
+    // let arr = [2, 4, 6, 3, 7];
+
+    // let newarr = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] > 5) {
+    //         newarr.push(arr[i]);
+    //     }
+    // }
+    // console.log(arr)
+    // console.log(newarr)
+
+    // let arr = [2, 4, 6, 3, 7];
+    // let newarr = arr.filter((val) => val % 2 == 0)
+    // console.log(arr)
+    // console.log(newarr)
+
+
+    // let arr = [2, 4, 6, 3, 7];
+    // let newarr = arr.filter((val) => val % 2 == 1)
+    // console.log(arr)
+    // console.log(newarr)
+
+
+    // let arr = [2, 4, -6, 3, -7];
+    // let newarr = arr.filter((val) => val > 0)
+    // console.log(arr)
+    // console.log(newarr)
+
+
+    // let arr = [2, 4, -6, 3, -7];
+    // let newarr = arr.filter((val) => val < 0)
+    // console.log(arr)
+    // console.log(newarr)
+
+    // let arr = [2, 4, 6, 9, -7];
+    // let newarr = arr.filter((val) => val > 5 && val < 10)
+    // console.log(arr)
+    // console.log(newarr)
+
+
+    //array.reduce(callback_function)
+    //array.reduce is usedt to perform some operation on array and return a single value.
+
+    // let arr = [2, 5, 3, 7, 9];
+    // let sum = 0;
+    // for (i of arr) {
+    //     sum += i;
+    // }
+    // console.log(sum);
+
+    // let arr = [2, 5, 3, 7, 9];
+    // // let ans = arr.reduce((res, val) => res + val)
+    // let ans = arr.reduce((res, val) => res * val)
+
+    // console.log(ans);
+
+    // let arr = [2, 5, 53, 7, 9];
+    // let ans = arr.reduce((res, val) => res < val ? val : res)
+    // console.log(ans);
+
+    let arr = [2, 5, 3, 6, 9];
+    let ans = arr.filter((val) => val % 2 == 0).reduce((res, val) => res + val);
+    console.log(ans);
+
+</script>
