@@ -1,0 +1,46 @@
+<!-- dom selector  :- how to select or access dom element in javascript
+ 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Example</title>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+
+        p {
+            background-color: blue;
+            color: white;
+        }
+
+        .btn {
+            background-color: red;
+        }
+
+        div {
+            background-color: aqua;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM is examplain by Hello Wolrd Institute</h1>
+    <h3>DOM stands for Document object model</h3>
+    <p>The DOM represents the page so that programming languages
+        (like JavaScript) can change the document structure, style, and content dynamically.</p>
+    <p>hello i am alos a paragraph</p>
+    <button class="btn">click me !</button>
+
+    <script>
+        let para = document.getElementsByTagName("p");
+        console.log(para[1]);
+    </script>
+</body>
+
+</html>
