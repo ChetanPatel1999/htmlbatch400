@@ -1,7 +1,27 @@
-<!-- dom selector  :- how to select or access dom element in javascript
- 
+<!-- 
+ DOM Manipulation :- change dynamically in DOM
+
+ Selecting with id
+ document.getElementById(“myId”) 
+
+ Selecting with class
+ document.getElementsByClassName(“myClass”)
+
+ Selecting with tag
+ document.getElementsByTagName(“p”)
+
+
+ DOM Manipulation
+
+ Query Selector :- its best from above selctor because its work for all.
+ document.querySelector(“#myId / .myClass / tag”)
+ //returns first element
+
+ document.querySelectorAll(“#myId / .myClass / tag”)
+ //returns a NodeList
 
 -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,37 +29,97 @@
 <head>
     <title>DOM Example</title>
     <style>
-        h1 {
-            background-color: yellow;
-        }
-
-        p {
+        #heading {
             background-color: blue;
             color: white;
         }
 
-        .btn {
-            background-color: red;
-        }
-
-        div {
-            background-color: aqua;
-            padding: 5px;
+        p {
+            background-color: pink;
         }
     </style>
 </head>
 
 <body>
-    <h1>DOM is examplain by Hello Wolrd Institute</h1>
-    <h3>DOM stands for Document object model</h3>
-    <p>The DOM represents the page so that programming languages
-        (like JavaScript) can change the document structure, style, and content dynamically.</p>
-    <p>hello i am alos a paragraph</p>
-    <button class="btn">click me !</button>
+    <h1 id="heading">hello world institue</h1>
+    <p>hello students how are you</p>
+    <div class="box">
+        <h3 id="para" class="my-class">coding course provide by institue</h3>
+        <ul>
+            <li>Python</li>
+            <li id="li1">java</li>
+            <li>javaScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <p>inside div para</p>
+        </ul>
+    </div>
+    <p id="para">please visit hello world institute to more info</p>
+    <p>thanks for visiting my website</p>
+    <button class="my-class">get more !</button>
 
     <script>
-        let para = document.getElementsByTagName("p");
-        console.log(para[1]);
+        // let ele = document.getElementById("para");
+        // console.log(ele);
+        // let head = document.getElementById("heading");
+        // console.log(head);
+
+        // let h3 = document.getElementsByClassName("my-class");
+        // console.log(h3)
+        // console.log(h3[0]);
+        // console.log(h3[1]);
+
+        // let ele = document.getElementsByTagName("li");
+        // console.log(ele);
+        // console.log(ele[0]);
+        // console.log(ele[1]);
+        // console.log(ele[2]);
+
+
+        // let ele = document.querySelector("p");
+        // console.log(ele);
+
+        // let ele = document.querySelectorAll("p");
+        // console.log(ele);
+        // console.log(ele[0]);
+        // console.log(ele[1]);
+
+        // let ele = document.querySelector("#para");
+        // console.log(ele);
+
+        // let ele = document.querySelectorAll("#para");
+        // console.log(ele);
+        // console.log(ele[0]);
+        // console.log(ele[1]);
+
+
+        // let ele = document.querySelector(".my-class");
+        // console.log(ele);
+
+        // let ele = document.querySelectorAll(".my-class");
+        // console.log(ele);
+        // console.log(ele[0]);
+        // console.log(ele[1]);
+
+
+        // let ele = document.querySelector("div p");
+        // console.log(ele);
+
+        // let ele = document.querySelector(".box p");
+        // console.log(ele);
+
+        // let ele = document.querySelector(".box #li1");
+        // console.log(ele);
+
+        let ele = document.querySelectorAll("li");
+        console.log(ele);
+        let i = 0;
+        for (li of ele) {
+            // console.log(li.innerText);
+            let arr = ["ram ji", "shyam ji ", "ghanshyam ji", "khatushyam ji", "balram ji"]
+            li.innerText = arr[i];
+            i++;
+        }
     </script>
 </body>
 
