@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .heading {
+            background-color: blue;
+            color: white;
+        }
+
+        div {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">hello world institute</h1>
+    <button onclick="changePara()">click me!</button>
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <p>this is paragraph 4</p>
+    </div>
+
+    <script>
+        function changeHeading1() {
+            let ele = document.querySelector(".heading");
+            ele.innerText = "hello coding classes";
+        }
+        function changeHeading2() {
+            let ele = document.querySelector(".heading");
+            ele.innerText = "hello programming classes";
+        }
+
+        function changePara() {
+            let paras = document.querySelectorAll("p");
+            let i = 0;
+            for (para of paras) {
+                let arr = ["ram ji", "shyam ji ", "ghanshyam ji", "khatushyam ji", "balram ji"]
+                para.innerText = arr[i];
+                i++;
+            }
+        }
+    </script>
+</body>
+
+</html>

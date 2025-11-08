@@ -1,0 +1,94 @@
+<!-- 
+
+ DOM Manipulation :-
+
+ Properties :-  using this properties we can get / change / update dom element value/data.
+
+ tagName : returns tag for element nodes
+ innerText : returns the text content of the element and all its children
+ explaine children termlogy using perant child concept fristchild / last child / middle child
+ innerHTML : returns the plain text or HTML contents in the element
+ textContent : returns textual content even for hidden elements
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .heading {
+            background-color: blue;
+            color: white;
+        }
+
+        p {
+            background-color: pink;
+        }
+
+        div {
+            background-color: chocolate;
+        }
+
+        #id2 {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">hello world institue</h1>
+    <p id="id2">hello students how are you</p>
+    <div class="box">
+        <h3 id="para" class="my-class">coding course provide by institue</h3>
+        <ul>
+            <li>Python</li>
+            <li id="li1">java</li>
+            <li>javaScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+        </ul>
+    </div>
+    <p id="para">please visit hello world institute to more info</p>
+    <p>thanks for visiting my website</p>
+    <button class="my-class">get more !</button>
+
+    <script>
+        // let ele = document.querySelector(".heading");
+        // console.log(ele.innerText);
+
+        // let ele = document.querySelector("div");
+        // console.log(ele.innerText);
+
+        // let ele = document.querySelector("body");
+        // console.log(ele.innerText);
+
+        // let ele = document.querySelector(".heading");
+        // // ele.innerText = "coding classes";
+        // ele.innerText = ele.innerText + " " + "coding classes";
+
+
+        // let ele = document.querySelector(".heading");
+        // console.log(ele.tagName);
+
+        // let ele = document.querySelector(".my-class");
+        // console.log(ele.tagName);
+
+
+        // let ele = document.querySelector("div");
+        // console.log(ele.innerHTML)
+
+
+        // let ele = document.querySelector("p");
+        // ele.innerHTML = "<b style='color:red' >hello brother</b>";
+
+
+        let ele = document.querySelector("#id2");
+        // console.log(ele.textContent)
+        ele.textContent = "my brother";
+
+
+
+    </script>
+</body>
+
+</html>
