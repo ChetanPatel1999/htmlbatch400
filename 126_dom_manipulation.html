@@ -1,0 +1,85 @@
+<!-- 
+DOM Manipulation
+ Attributes
+ getAttribute( attr ) //to get the attribute value
+ setAttribute( attr, value ) //to set the attribute value
+
+ Style :- to change style of any html element using javascript
+
+ node.style
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            background-color: blue;
+            color: white;
+        }
+
+        .my-ul {
+            background-color: aqua;
+        }
+
+        .btn {
+            background-color: red;
+        }
+
+        .my-img {
+            width: 100px;
+        }
+
+        .my-style {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading" class="my-class" title="this is heading">hello world institute</h1>
+    <h3 style="background-color: pink;color:darkred;font-size:30px">we provied many programming courses</h3>
+    <ul class="my-ul">
+        <li>python</li>
+        <li>java</li>
+        <li>HTML</li>
+    </ul>
+    <img class="my-img" title="this is nature" src="images/pic1.jpg">
+    <p>for info visit hello world institute contect 8085896740</p>
+    <button class="btn" onclick="change()">more details</button>
+    <script>
+        // let ele = document.querySelector("#heading");
+        // console.log(ele.getAttribute("title"));
+        // let image = document.querySelector(".my-img");
+        // console.log(image);
+        // console.log(image.getAttribute("src"))
+
+        // function changeImg() {
+        //     let image = document.querySelector(".my-img");
+        //     image.setAttribute("src", "images/pecock.jpg")
+        //     image.setAttribute("title", "this is morepankh")
+        // }
+
+
+        // function change() {
+        //     let h3 = document.querySelector("h3");
+        //     h3.setAttribute("class", "my-style");
+        // }
+
+        function change() {
+            let h3 = document.querySelector("h3");
+            // console.log(h3.style.color)
+            // console.log(h3.style.backgroundColor)
+            // console.log(h3.style.fontSize)
+
+            h3.style.backgroundColor = "black";
+            h3.style.color = "white";
+        }
+    </script>
+</body>
+
+</html>

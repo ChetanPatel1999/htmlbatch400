@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: red;
+            border: 1px solid gray;
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .container input,
+        button {
+            height: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input id="val1" type="text" placeholder="enter first num">
+        <input id="val2" type="text" placeholder="enter second num">
+        <p>result show </p>
+        <button onclick="add()">add</button>
+    </div>
+    <script>
+        function add() {
+
+            let input1 = document.querySelector("#val1");
+            let input2 = document.querySelector("#val2");
+            let para = document.querySelector("p");
+            let num1 = Number(input1.value);
+            let num2 = Number(input2.value);
+            let sum = num1 + num2;
+            para.innerText = `addition = ${sum}`;
+        }
+    </script>
+</body>
+
+</html>
