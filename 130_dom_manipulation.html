@@ -1,0 +1,95 @@
+<!-- 
+DOM Manipulation
+ Insert Elements
+ let el = document.createElement(“div“)
+ node.append( el ) //adds at the end of node (inside)
+ node.prepend( el ) //adds at the start of node (inside)
+ node.before( el ) //adds before the node (outside)
+ node.after( el ) //adds after the node (outside) 
+
+  Delete Element
+ node.remove( ) //removes the node
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+
+        ul {
+            background-color: blueviolet;
+        }
+
+        div {
+            background-color: aqua;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .btn-style {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world institute</h1>
+    <h3>this course provide by institute</h3>
+    <ul>
+        <li>python</li>
+        <li>java</li>
+        <li>HTML</li>
+    </ul>
+    <div>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+    </div>
+    <p>for more info please visit hello world institue</p>
+    <button>get more details</button>
+    <script>
+        // let ul = document.querySelector("ul");
+
+        // let newli1 = document.createElement("li");
+        // newli1.innerText = "CSS";
+
+        // let newli2 = document.createElement("li");
+        // newli2.innerText = "PHP";
+
+
+        // ul.append(newli1);
+        // ul.append(newli2);
+
+        // ul.prepend(newli1);
+
+        let div = document.querySelector("div");
+
+        let btn = document.createElement("button");
+        btn.innerText = "click me!";
+        // btn.style.backgroundColor = "red";
+        btn.setAttribute("class", "btn-style");
+        // div.append(btn);
+        // div.prepend(btn);
+        div.after(btn);
+        // div.before(btn);
+
+
+        //we can also delete element using javascript method
+
+        // btn.remove();
+
+        let h1 = document.querySelector("h1");
+        h1.remove();
+    </script>
+</body>
+</html>

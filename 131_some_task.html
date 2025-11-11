@@ -1,0 +1,41 @@
+<!-- simple to do list type practice -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+            background-color: red;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Enter Task">
+        <button onclick="taskadd()">Add Task </button>
+        <div class="list">
+
+        </div>
+    </div>
+    <script>
+        function taskadd() {
+            let input = document.querySelector("input");
+            let list = document.querySelector(".list");
+            if (input.value.length > 0) {
+                let para = document.createElement("p");
+                para.innerText = input.value;
+                input.value = "";
+                para.style.backgroundColor = "burlywood";
+                list.append(para);
+            }
+        }
+    </script>
+</body>
+
+</html>
