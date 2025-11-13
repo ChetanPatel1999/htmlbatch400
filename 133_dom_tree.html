@@ -1,0 +1,80 @@
+<!-- What is the DOM Tree?
+
+DOM (Document Object Model) represents an HTML page as a tree-like structure — where:
+
+Each HTML tag is a node (element).
+
+Elements inside other elements are child nodes.
+
+Elements that contain other elements are parent nodes.
+
+
+element.parentElement :- return parent element 
+
+element.children:-Returns all child elements
+
+console.log(parent.firstElementChild);
+
+console.log(parent.lastElementChild);
+
+console.log(child.nextElementSibling);
+
+console.log(child.previousElementSibling);
+
+hasChildNodes():-Checks whether the element has any child nodes.
+
+parent.removeChild(child);
+
+replaceChild():-Replaces one child element with another.
+parent.replaceChild(newPara, child);
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parant">
+        <p id="child1">this is paragraph</p>
+        <h1 id="child2">hello brother</h1>
+        <button id="child3">click me</button>
+    </div>
+    <script>
+        //parant access method and attribute
+        // let h1 = document.querySelector("#child2");
+        // console.log(h1);
+        // console.log(h1.parentElement);
+        // console.log(h1.parentElement.parentElement);
+
+        //child access method and attribute
+        // let div = document.querySelector("#parant");
+        // console.log(div)
+        // console.log(div.children[0]);
+        // console.log(div.children[1]);
+        // console.log(div.firstElementChild);
+        // console.log(div.lastElementChild);
+
+
+        // let h1 = document.querySelector("#child2");
+        // console.log(h1);
+        // console.log(h1.nextElementSibling);
+        // console.log(h1.previousElementSibling);
+
+        // let h1 = document.querySelector("#child2");
+        // let div = document.querySelector("#parant");
+        // console.log(h1.hasChildNodes())
+        // console.log(div.hasChildNodes())
+
+        let div = document.querySelector("#parant");
+        let h1 = document.querySelector("h1");
+        // div.remove();
+        // div.removeChild(h1);
+        h1.remove();
+    </script>
+</body>
+
+</html>

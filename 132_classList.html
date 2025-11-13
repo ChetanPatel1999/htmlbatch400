@@ -1,0 +1,72 @@
+<!-- 
+element.classList :- provide class list for a element 
+1. add():-Adds one or more classes to an element.
+element.classList.add("classname1", "classname2", ...);
+2.remove():-Removes one or more classes from the element.
+element.classList.remove("classname1", "classname2", ...);
+3.toggle():-Adds a class if it’s not present, otherwise removes it.
+element.classList.toggle("classname");
+You can also pass a second boolean argument:
+div.classList.toggle("dark-mode", true);  // Forces add
+div.classList.toggle("dark-mode", false); // Forces removez
+4.contains():-Checks if a class is present on the element return boolean value true , false.
+element.classList.contains("classname");
+5. replace():-Replaces one class with another.
+ element.classList.replace("oldClass", "newClass");
+6.Access by Index:-You can access individual classes by their index (like an array).
+let firstClass = div.classList[0];   
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .text {
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myid" class="red text">hello world institute</h1>
+    <p id="mypara" class="red">this is programming institute which provide many programming coursess</p>
+    <ul>
+        <li>python</li>
+        <li>java</li>
+        <li>php</li>
+    </ul>
+    <button onclick="fun()">click me!</button>
+    <script>
+        // let ele = document.querySelector("#myid");
+        // // console.log(ele.classList)
+        // ele.classList.remove("red");
+        // ele.classList.add("red");
+
+        function fun() {
+            let para = document.querySelector("#mypara");
+            // para.classList.add("red","text");
+
+            // para.classList.toggle("red");
+
+            if (para.classList.contains("red")) {
+                para.classList.remove("red");
+                para.classList.add("text");
+            }
+            else {
+                para.classList.remove("text");
+                para.classList.add("red");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
