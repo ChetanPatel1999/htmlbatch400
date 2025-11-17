@@ -100,6 +100,13 @@ Event Handling in JS
 
     </div>
     <p id="para">hello i am paragraph</p>
+    <input id="inp" type="text">
+    <select>
+        <option>mp</option>
+        <option>up</option>
+        <option>rj</option>
+        <option>mh</option>
+    </select>
     <script>
         let btn = document.querySelector("#btn");
 
@@ -153,14 +160,40 @@ Event Handling in JS
         // }
 
 
-        box.onmouseover = () => {
-            console.log("hello box mouse over");
-            document.querySelector("#box").style.backgroundColor = "blue";
-        }
+        // box.onmouseover = () => {
+        //     console.log("hello box mouse over");
+        //     document.querySelector("#box").style.backgroundColor = "blue";
+        // }
 
-        box.onmouseout = () => {
-            console.log("hello box mouse out");
-            document.querySelector("#box").style.backgroundColor = "red";
+        // box.onmouseout = () => {
+        //     console.log("hello box mouse out");
+        //     document.querySelector("#box").style.backgroundColor = "red";
+        // }
+
+        let input = document.querySelector("#inp");
+
+        // input.onfocus = () => {
+        //     console.log("hello focus");
+        //     input.style.backgroundColor = "red";
+        // }
+
+        // input.onblur = () => {
+        //     console.log("blur event is occure");
+        //     input.style.backgroundColor = "white";
+        // }
+
+        // input.onkeyup = () => {
+        //     console.log("kye up event")
+        // }
+
+        // input.onkeydown = () => {
+        //     console.log("kye down event")
+        // }
+
+
+        let select = document.querySelector("select")
+        select.onchange = () => {
+            console.log("change is fire");
         }
     </script>
 

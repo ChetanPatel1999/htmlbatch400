@@ -1,0 +1,53 @@
+<!-- 
+Event Object
+ It is a special object that has details about the event.
+ All event handlers have access to the Event Object's properties and methods.
+ node.event = (e) => {
+ //handle here
+ }
+ e.target, e.type, e.clientX, e.clientY
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>click me</button>
+    <select>
+        <option>india</option>
+        <option>america</option>
+        <option>austrelia</option>
+        <option>pakistan</option>
+    </select>
+    <script>
+        let btn = document.querySelector("button");
+        // btn.onmouseover = (evt) => {
+        //     console.log("hello js");
+        //     // console.log(evt);
+        //     console.log(evt.type);
+        //     console.log(evt.target);
+        //     console.log(evt.clientX,evt.clientY);
+        //     console.log(evt.target.innerText);
+        // }
+
+        // btn.onmouseover = (e) => {
+        //     e.target.style.backgroundColor = 'red';
+        // }
+        // btn.onmouseout = () => {
+        //     btn.style.backgroundColor = 'white';
+        // }
+
+        let select = document.querySelector("select");
+        select.onchange = (e) => {
+            console.log(e.target.value)
+        }
+
+    </script>
+</body>
+
+</html>

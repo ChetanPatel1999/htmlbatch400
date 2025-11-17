@@ -1,0 +1,85 @@
+<!-- 
+Event Listeners:- 
+Event Listener ek function hota hai jo browser me kisi event
+(click, change, keypress, hover, etc.) ko sunता (listen) hai.
+here at a time we can perform more than one funtion for same 
+event occure.
+node.addEventListener( event, callback ) 
+node.removeEventListener( event, callback ) 
+*Note : the callback reference should be same to remove
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>click me !</button>
+    <div>
+
+    </div>
+    <script>
+        let btn = document.querySelector("button");
+
+        // we cant apply same event two times.
+        // btn.onclick = () => {
+        //     console.log("hello js");
+        // }
+        // btn.onclick = () => {
+        //     let para = document.createElement("p");
+        //     para.innerText = "hello i am para";
+        //     let body = document.querySelector("body");
+        //     body.prepend(para);
+        // }
+
+
+
+
+
+        //event listner :- its just a function
+
+        // btn.addEventListener("click", () => {
+        //     let para = document.createElement("p");
+        //     para.innerText = "hello i am para";
+        //     let body = document.querySelector("body");
+        //     body.prepend(para);
+        // })
+
+        // btn.addEventListener("click", () => {
+        //     console.log("hello js2");
+        // })
+
+
+        // function printmsg() {
+        //     console.log("hello i am chetan");
+        // }
+
+        // const printmsg = () => {
+        //     console.log("hello i am chetan");
+        // }
+
+        // // btn.addEventListener("click",printmsg)
+
+        // btn.addEventListener("mouseover", printmsg)
+
+
+
+        btn.addEventListener("click", () => {
+            document.querySelector("div").style.backgroundColor = "blue";
+        })
+
+    </script>
+</body>
+
+</html>
