@@ -88,9 +88,28 @@ body {
     top: -3px
 }
 
+.list-container li.checked::before {
+    background-image: url(images/check-box.png);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
 .list-container li span {
     position: absolute;
     right: 0;
     font-size: 20px;
     color: rgb(120, 115, 115);
+    /* padding: 10px; */
+    padding-left: 12px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.list-container li span:hover {
+    background-color: rgb(246, 240, 240);
 }
