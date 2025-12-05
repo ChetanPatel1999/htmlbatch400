@@ -1,0 +1,80 @@
+<!-- 
+Prototypes in JS
+ A javaScript object is an entity having state and behavior (properties and method).
+
+
+ JS objects have a special property called prototype.
+
+ We can set prototype using     __ proto __
+
+ *If object & prototype have same method,
+ object’s method will be used. 
+-->
+<script>
+    // const student = {
+    //     name: "yashraj",
+    //     rno: 101,
+    //     age: 20
+    // }
+    // console.log(student)
+    // console.log('student name = ' + student.name)
+    // console.log('student age = ' + student.age)
+    // console.log('student rno = ' + student.rno)
+
+    // console.log('student name = ' + student["name"])
+    // console.log('student age = ' + student["age"])
+    // console.log('student rno = ' + student["rno"])
+
+
+
+    // const student = {
+    //     name: "yashraj",
+    //     rno: 101,
+    //     age: 20,
+    //     display: function () {
+    //         console.log('student name = ' + this.name)
+    //         console.log('student age = ' + this.age)
+    //         console.log('student rno = ' + this.rno)
+    //     }
+    // }
+
+    // student.display();
+
+
+
+    // const student = {
+    //     name: "yashraj",
+    //     rno: 101,
+    //     age: 20,
+    //     display() {
+    //         console.log('student name = ' + this.name)
+    //         console.log('student age = ' + this.age)
+    //         console.log('student rno = ' + this.rno)
+    //     },
+    //     display2() {
+    //         console.log('student name = ' + this.name)
+    //         console.log('student age = ' + (this.age + 5))
+    //         console.log('student rno = ' + (this.rno + 2))
+    //     }
+    // }
+
+    // student.display();
+    // student.display2();
+
+
+    const student = {
+        name: "yashraj",
+        rno: 101,
+        display() {
+            console.log('student name = ' + this.name)
+            console.log('student rno = ' + this.rno)
+        }
+    }
+    const betchstudent = {
+        branch: "cs",
+        sem: 3
+    }
+
+    betchstudent.__proto__ = student;
+    console.log(betchstudent)
+</script>

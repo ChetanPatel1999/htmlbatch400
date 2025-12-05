@@ -1,0 +1,27 @@
+<script>
+    //class and object and javascript
+
+    class mouse {
+        setMouse(color, price, rating) {
+            this.color = color;
+            this.price = price;
+            this.rating = rating;
+        }
+        getMouse() {
+            console.log("\nmouse color : " + this.color);
+            console.log("mouse price : " + this.price);
+            console.log("mouse rating : " + this.rating);
+            console.log("------------------------------------\n");
+        }
+    }
+
+    let m1 = new mouse();
+    m1.setMouse("red", 200, 3.4);
+    m1.getMouse();
+
+    let m2 = new mouse();
+    m2.setMouse("black", 300, 4.7);
+    m2.getMouse();
+
+
+</script>
