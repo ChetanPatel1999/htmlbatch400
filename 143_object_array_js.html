@@ -1,0 +1,26 @@
+<!-- object array  -->
+<script>
+    class mouse {
+        setMouse() {
+            this.color = prompt("enter color : ");
+            this.price = prompt("enter price : ");
+        }
+        getMouse() {
+            console.log("\nmouse color : " + this.color);
+            console.log("mouse price : " + this.price);
+            console.log("------------------------------------\n");
+        }
+    }
+
+    let mouses = []
+    let n = prompt("enter length : ")
+    for (let i = 0; i < n; i++) {
+        mouses.push(new mouse())
+    }
+    for (let i = 0; i < n; i++) {
+        mouses[i].setMouse()
+    }
+    for (let i = 0; i < n; i++) {
+        mouses[i].getMouse()
+    }
+</script>

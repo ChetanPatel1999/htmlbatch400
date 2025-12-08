@@ -1,0 +1,21 @@
+<script>
+    class Student {
+        constructor(name, rno, per) {
+            this.name = name;
+            this.rno = rno;
+            this.per = per;
+        }
+        getStudent() {
+            console.log("student Info : ");
+            console.log("student name : " + this.name);
+            console.log("student rno : " + this.rno);
+            console.log("student per : " + this.per);
+        }
+    }
+
+    let s1 = new Student("yashraj", 101, 78.45);
+    s1.getStudent();
+
+    let s2 = new Student("raj", 102, 79.23);
+    s2.getStudent();
+</script>

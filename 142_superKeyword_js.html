@@ -1,0 +1,28 @@
+<!-- 
+use of super keyword in js 
+-->
+<script>
+    class animal {
+        constructor(name, color) {
+            this.name = name
+            this.color = color
+        }
+        showAnimal() {
+            console.log("name  : " + this.name)
+            console.log("color  : " + this.color)
+        }
+    }
+    class dog extends animal {
+        constructor(name, color, breed) {
+            super(name, color);
+            this.breed = breed
+        }
+        getDog() {
+            super.showAnimal()
+            console.log("breed : " + this.breed);
+        }
+    }
+
+    let d1 = new dog("tommy", "black", "lebra");
+    d1.getDog();
+</script>

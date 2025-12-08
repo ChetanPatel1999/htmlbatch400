@@ -1,0 +1,55 @@
+<!-- <script>
+    class A {
+        m1() {
+            console.log("class A m1 is called");
+        }
+    }
+
+    class B extends A {
+        m2() {
+            console.log("class B m2 is called");
+        }
+    }
+    let o1 = new B();
+    o1.m1();
+    o1.m2();
+</script> -->
+
+<script>
+    class Student {
+        setStudent(rno, per) {
+            this.rno = rno;
+            this.per = per
+        }
+        getStudent() {
+            console.log("student Info : ");
+            console.log("student rno : " + this.rno);
+            console.log("student per : " + this.per);
+        }
+    }
+
+    class BTechStd extends Student {
+        setbranch(branch) {
+            this.branch = branch;
+        }
+        getBranch() {
+            console.log("Branch : " + this.branch)
+        }
+    }
+
+    class medicalStd extends Student {
+        setspecification(speci) {
+            this.speci = speci
+        }
+        getSpecification() {
+            console.log("specification : " + this.speci);
+        }
+    }
+    
+    let s1 = new BTechStd();
+    s1.setStudent(101, 67.90);
+    s1.setbranch("CS");
+    s1.getStudent();
+    s1.getBranch();
+
+</script>
