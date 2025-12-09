@@ -1,0 +1,37 @@
+<!-- 
+callback function :- when we pass a function as parameter in other function is called callback function. 
+
+-->
+<script>
+    function add(a, b) {
+        console.log("sum = " + (a + b));
+    }
+    function sub(a, b) {
+        console.log("sub = " + (a - b));
+    }
+    function mul(a, b) {
+        console.log("mul = " + (a * b));
+    }
+
+    function calculator(x, y, Callback) {
+        Callback(x, y);
+    }
+
+
+    // calculator(5, 8, sub);
+
+    // calculator(24, 8, (a, b) => {
+    //     console.log("division = " + (a / b));
+    // });
+
+    function fun() {
+        console.log("hello i am fun");
+    }
+
+
+    // setTimeout(fun, 3000)
+    setTimeout(() => {
+        console.log("hello i am chetan");
+    }, 3000)
+
+</script>

@@ -1,0 +1,41 @@
+<!-- // Callback Hell :  Callback Hell is a situation in JavaScript where many callbacks 
+    // are nested inside each other, making the code messy, hard to read, and difficult 
+    // to manage.
+    // its  also called (Pyramid of Doom)
+    // This style of programming becomes difficult to understand & manage.
+    // we want to access some data from data base but sequence by squence. -->
+<!-- <script>
+    // function getData(id) {
+    //     setTimeout(() => {
+    //         console.log("data :" + id)
+    //     }, 3000);
+    // }
+
+    // //all three output display same time after three seconds
+    // getData(1);
+    // getData(2);
+    // getData(3);
+</script> -->
+
+<script>
+    function getData(id, getNextData) {
+        setTimeout(() => {
+            console.log("data :" + id)
+            if (getNextData) {
+                getNextData();
+            }
+        }, 3000);
+    }
+
+    console.log("data 1 is getting....")
+    getData(1, () => {
+        console.log("data 2 is getting....")
+        getData(2, () => {
+            console.log("data 3 is getting....")
+            getData(3, () => {
+                console.log("data 4 is getting....")
+                getData(4);
+            });
+        });
+    })
+</script>
