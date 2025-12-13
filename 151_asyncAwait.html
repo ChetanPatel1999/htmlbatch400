@@ -1,0 +1,22 @@
+<script>
+    function getData(id) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data :" + id);
+                resolve("success");
+            }, 2000)
+        })
+    }
+
+    async function getResult() {
+        console.log("data 1 is getting...");
+        await getData(1);
+        console.log("data 2 is getting...");
+        await getData(2);
+        console.log("data 3 is getting...");
+        await getData(3);
+        console.log("data 4 is getting...");
+        await getData(4);
+    }
+    getResult();
+</script>
