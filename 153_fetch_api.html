@@ -1,0 +1,68 @@
+<!-- 
+fetch api :- the fetch api provides an interface for fetching(sending / receving ) resorcecs.
+
+it used  request and response object .
+
+the fetch()  method  is used to fetch a resorce(data).
+
+let promise = fetch(url , [option])
+
+
+Understanding Terms :- 
+
+AJAX   is  Asynchronous JS & XML
+
+JSON is javascript Object Notation
+
+json() method :- returns a second promise that resolve with the result of parsing the 
+                 response body text as JSON(input is json output is JS object ) 
+
+Request & Response
+HTTP Verbs
+Response Status Code
+
+HTTP response headers also Contain details about the responses
+, such as content type , HTTP status code etc.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="btn">get randome pic</button>
+    <div>
+
+    </div>
+    <script>
+        let url = "https://dog.ceo/api/breeds/image/random";
+        let btn = document.querySelector("#btn");
+        let div = document.querySelector("div");
+        const getDogRandomPic = async () => {
+            let promise = await fetch(url);
+            console.log(promise)
+            let data = await promise.json();
+            console.log(data.message);
+            let img = document.createElement("img");
+            img.src = data.message;
+            console.log(img)
+            div.append(img);
+        }
+
+        btn.addEventListener("click", getDogRandomPic)
+    </script>
+</body>
+
+</html>
