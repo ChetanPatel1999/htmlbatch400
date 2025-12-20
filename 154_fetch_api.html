@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #des {
+            background-color: blue;
+            color: white;
+            font-weight: bolder;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        #age {
+            background-color: blue;
+            color: white;
+            font-weight: bolder;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button>get dog facts</button>
+    <p id="des">
+
+    </p>
+    <P id="age">
+
+    </P>
+    <script>
+        let url = "https://dogapi.dog/api/v2/breeds";
+        let btn = document.querySelector("button")
+        let para1 = document.querySelector("#des")
+        let para2 = document.querySelector("#age")
+        async function getDogFacts() {
+            let promise = await fetch(url);
+            // console.log(promise);
+            let res = await promise.json();
+            let age = res.data[parseInt(Math.random() * 283)].attributes.life;
+            console.log(age);
+            para1.innerText = res.data[parseInt(Math.random() * 283)].attributes.description;
+            para2.innerText = `min age : ${age.min} \n max age: ${age.max}`;
+            para2.style.display = "block";
+            para1.style.display = "block";
+        }
+
+        btn.addEventListener("click", getDogFacts)
+    </script>
+</body>
+
+</html>

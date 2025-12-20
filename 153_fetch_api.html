@@ -33,7 +33,7 @@ HTTP response headers also Contain details about the responses
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        img{
+        img {
             width: 200px;
             height: 200px;
         }
@@ -50,17 +50,29 @@ HTTP response headers also Contain details about the responses
         let url = "https://dog.ceo/api/breeds/image/random";
         let btn = document.querySelector("#btn");
         let div = document.querySelector("div");
-        const getDogRandomPic = async () => {
-            let promise = await fetch(url);
-            console.log(promise)
-            let data = await promise.json();
-            console.log(data.message);
-            let img = document.createElement("img");
-            img.src = data.message;
-            console.log(img)
-            div.append(img);
-        }
+        // const getDogRandomPic = async () => {
+        //     let promise = await fetch(url);
+        //     console.log(promise)
+        //     let data = await promise.json();
+        //     console.log(data.message);
+        //     let img = document.createElement("img");
+        //     img.src = data.message;
+        //     console.log(img)
+        //     div.append(img);
+        // }
 
+        function getDogRandomPic() {
+            fetch(url).then((promise) => {
+                // console.log(promise)
+                return promise.json();
+            }).then((res) => {
+                // console.log(res)
+                let img = document.createElement("img");
+                img.src = res.message;
+                // console.log(img)
+                div.append(img);
+            })
+        }
         btn.addEventListener("click", getDogRandomPic)
     </script>
 </body>
