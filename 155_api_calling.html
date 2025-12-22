@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 250px;
+            background-color: red;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 20px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        #name,#age,#gender {
+            color: white;
+            margin: 5px;
+        }
+        #image
+        {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button>get randome User</button>
+    <div id="box">
+        <div id="image-box">
+            <img id="image">
+        </div>
+        <div id="data">
+            <h3 id="name"></h3>
+            <h3 id="gender"></h3>
+            <h3 id="age"></h3>
+        </div>
+    </div>
+    <script>
+        let url = "https://randomuser.me/api/";
+        let btn = document.querySelector("button");
+        let box = document.querySelector("#box");
+        let img = document.querySelector("#image");
+        let name = document.querySelector("#name");
+        let gender = document.querySelector("#gender");
+        let age = document.querySelector("#age");
+
+        async function getRandomUser() {
+            let promise = await fetch(url);
+            // console.log(promise)
+            let Data = await promise.json();
+            // console.log(Data);
+            let userData = Data.results[0];
+            console.log(userData)
+            let picture = userData.picture
+            console.log(picture.medium)
+            img.src = picture.medium;
+            name.innerText = `${userData.name.title} ${userData.name.first}  ${userData.name.last}`
+            age.innerText = "Age : " + userData.dob.age;
+            gender.innerText="Gender :"+userData.gender;
+        }
+        btn.addEventListener("click", getRandomUser);
+
+    </script>
+</body>
+
+</html>
